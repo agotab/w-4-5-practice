@@ -1,53 +1,30 @@
-const data = [
-  {
-    name: "Kovács János",
-    age: 29,
-    subjects: [
-      {
-        subjectName: "Maths",
-        subjectGrade: 5,
-      },
-      {
-        subjectName: "Physics",
-        subjectGrade: 3,
-      },
-      {
-        subjectName: "English",
-        subjectGrade: 2,
-      },
-    ],
-  },
-  {
-    name: "Leföld Elek",
-    age: 16,
-    subjects: [
-      {
-        subjectName: "Maths",
-        subjectGrade: 2,
-      },
-      {
-        subjectName: "Physics",
-        subjectGrade: 1,
-      },
-      {
-        subjectName: "English",
-        subjectGrade: 5,
-      },
-    ],
-  },
-];
+/* const arr = ["egy", "ketto", "harom", "negy"]
+console.log(arr.includes("ketto"))
 
-/* for (let i = 0; i < data.length; i++) {
-    console.log(data[i].name)
-} */
+console.log(["one", "two", "three", "four"].includes("text"))
 
-// data.forEach(student => console.log(student.name)) //data arrayen futott le a foreach metódus, a studenttel csinálja a név logolást
+const obj = {
+  key1: "value",
+  key2: 10,
+  key3: function() {
+    console.log("hello")
+  }
+}
+console.log(obj.key3()) */
 
-data.forEach(student => {
-  console.log(student.name);
+const arr = ["alma", "körte", "uborka"]
+/* arr.push("szilva", "birs", "szőlő") // a tömb legvégére beilleszti, egy arrayre kerül
 
+console.log(arr) */
 
-  student.subjects.forEach((subject) => console.log(`${subject.subjectName}: ${subject.subjectGrade}`)
-  );
-});
+const arrElement = arr.pop() //legutolsó elemet kiszedi
 
+console.log(arrElement, arr)
+
+for (const key of Object.keys(obj)) {
+  console.log(key, obj[key])
+}
+
+const userNames = users.map((user) => user.name) //a map visszaad egy másik tömböt
+
+console.log(userNames)
